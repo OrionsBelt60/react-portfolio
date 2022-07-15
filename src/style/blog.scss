@@ -1,0 +1,106 @@
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    .admin-blog-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            margin-left: 15px;
+            cursor: pointer;
+
+            &:hover {
+                color: $warning;
+            }
+        }
+    }
+
+    .new-blog-link {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+
+        a {
+            font-size: 3em;
+            cursor: pointer;
+            color: $teal;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            transition: 0.5s ease-in-out;
+
+            &:hover {
+                color: $dark-teal;
+            }
+        }
+    }
+
+    .back-btn-wrapper {
+        position: fixed;
+        left: 0;
+        top: 10;
+
+        a {
+            font-size: 1.25rem;
+            margin-left: 20px;
+            color: $teal;
+            text-decoration: none;
+            transition: 0.5s;
+            
+            &:hover {
+                color: $dark-teal;
+            }
+
+        }
+    }
+
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        width: 800px;
+
+        a {
+            text-decoration: none;
+            color: $teal;
+            transition: 0.5s ease-in-out;
+            
+            &:hover {
+            color: $dark-teal;
+            }
+        }
+
+        h1 {
+            font-size: 1.5em;
+        }
+
+        
+        .blog-detail-title-wrapper {
+            display: block;
+            color: $dark-teal;
+            text-transform: uppercase;
+            text-decoration: underline $offwhite;
+            border-bottom: 5px solid $dark-teal;
+            
+        }
+
+        .content {
+            padding-left: 5px;
+            padding-right: 5px;
+            border-left: 1px solid $offwhite;
+            border-right: 1px solid $offwhite;
+
+        }
+        .featured-image-wrapper {
+            img {
+                margin: 15px 0px;
+                width: 100%;
+                height: 350px;
+                border-radius: 5px;
+                object-fit: cover;
+            }
+        }
+    }
+}
